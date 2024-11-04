@@ -1,0 +1,42 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	padding: 20px;
+}
+.container {
+	display: grid;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 20px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-auto-rows: 250px;
+	grid-auto-flow: dense;
+	gap: 20px;
+	width: 100%;
+}
+.box a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.8s;
+}
+.box a:hover img {
+	transform: rotate(-8deg);
+	scale: (1.2);
+}
